@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/class_view"
+        android:layout_width="450dp"
+        android:layout_height="90dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/finish_dastud"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/backpo">
+        </ImageView>
+
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#d4d4d3"
+            android:textSize="15sp"
+            android:text="Class Name: "
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/cn_stud"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/color_2nddarker"
+            android:textSize="25dp"
+            android:text="ITEM ANALYSIS"
+            android:textStyle="bold"/>
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#d4d4d3"
+            android:textSize="15sp"
+            android:text="Number of students: "
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/class_view"
+        android:id="@+id/layout_listview_examsheet"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/listview_examsheet"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+        </ListView>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chekka.capstone">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Chekka"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Chekka"/>
+        <activity android:name=".ScanImageAnswerKey"/>
+        <activity android:name=".ScanImageAnswerSheet"/>
+        <activity android:name=".Chekka_settings"/>
+        <activity android:name=".Chekka_createexam"/>
+        <activity android:name=".Chekka_dashboard_classes"/>
+        <activity android:name=".Chekka_dashboard_student"/>
+        <activity android:name=".Chekka_addstudent"/>
+        <activity android:name=".Chekka_dashboard_student_info"/>
+        <activity android:name=".Chekka_addclass"/>
+        <activity android:name=".ExportExcelResult"/>
+        <activity android:name=".EditStudent"/>
+        <activity android:name=".EditClass"/>
+        <activity android:name=".EditExam"/>
+        <activity android:name=".test"/>
+        <activity android:name=".Chekka_dashboard"/>
+        <activity android:name=".test2"/>
+    </application>
+
+</manifest>

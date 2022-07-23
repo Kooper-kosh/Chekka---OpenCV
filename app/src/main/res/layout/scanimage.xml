@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.chekka.capstone.ScanImage">
+
+    <FrameLayout
+        android:id="@+id/scanned_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible" >
+
+        <com.adityaarora.liveedgedetection.view.TouchImageView
+            android:id="@+id/scanned_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center">
+
+        </com.adityaarora.liveedgedetection.view.TouchImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/crop_accept_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:alpha="0.8"
+                app:srcCompat="@drawable/accept" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6" />
+
+            <ImageView
+                android:id="@+id/crop_reject_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:alpha="0.8"
+                app:srcCompat="@drawable/reject" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

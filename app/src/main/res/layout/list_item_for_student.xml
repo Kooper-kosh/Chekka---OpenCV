@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:padding="15dp"
+    tools:context=".Chekka">
+
+    <FrameLayout
+        android:id="@+id/layout_listview_student"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rectangle10">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="80dp"
+            android:background="@drawable/yawa">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/item_student_name_ST"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/color_2nddarker"
+            android:textSize="25dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="120dp"
+            android:textStyle="bold"
+            android:text="Kat"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:id="@+id/item_student_number_icon_ST"
+            android:textColor="@color/color_2nddarker"
+            android:textSize="15dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="120dp"
+            android:text="Student Number:"/>
+
+        <TextView
+            android:id="@+id/item_student_number_ST"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="235dp"
+            android:textColor="@color/lightblue"
+            android:textSize="15dp"
+            android:text="4896"/>
+
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/item_student_edit_icon_ST"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="290dp"
+            android:background="@drawable/ic_edit"/>
+
+        <TextView
+            android:id="@+id/item_student_class_ST"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="230dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:visibility="invisible"/>
+    </FrameLayout>
+</LinearLayout>

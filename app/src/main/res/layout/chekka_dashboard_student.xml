@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    //CLASS LIST
+    <include layout="@layout/chekka_student_header"
+        android:visibility="invisible"/>
+    <RelativeLayout
+        android:id="@+id/class_view"
+        android:layout_width="450dp"
+        android:layout_height="90dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/finish_dastud"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backpo">
+        </ImageView>
+
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#d4d4d3"
+            android:textSize="15sp"
+            android:text="Class Name: "
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/cn_stud"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/color_2nddarker"
+            android:textSize="25dp"
+            android:text="KATRINA SUSARA"
+            android:textStyle="bold"/>
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#d4d4d3"
+            android:textSize="15sp"
+            android:text="Number of students: "
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="57dp"
+            android:background="@drawable/studenticon_cutie"
+            />
+        <TextView
+            android:id="@+id/numberstud"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="126dp"
+            android:layout_marginTop="65dp"
+            android:textColor="@color/color_2nddarker"
+            android:textSize="15sp"
+            android:text="100"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/class_view"
+        android:id="@+id/layout_listview_student"
+        android:layout_width="500dp"
+        android:layout_height="800dp"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/listview_studentname"
+            android:layout_width="350dp"
+            android:layout_height="650dp"
+            >
+        </ListView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/popforstudent_PP"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/forgett"
+        android:visibility="invisible">
+        <TextView
+            android:id="@+id/buttxt_viewstudent_PP"
+            android:layout_width="150dp"
+            android:layout_height="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="-45dp"
+            android:gravity="center"
+            android:text="VIEW CLASS"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:background="@drawable/darkborder2"
+            android:fontFamily="sans-serif"
+            />
+        <TextView
+            android:id="@+id/buttxt_editstudent_ST"
+            android:layout_width="150dp"
+            android:layout_height="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="-45dp"
+            android:gravity="center"
+            android:text="EDIT CLASSNAME"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:background="@drawable/darkborder2"
+            android:fontFamily="sans-serif"
+            />
+
+        <TextView
+            android:id="@+id/buttxt_deletestudent_ST"
+            android:layout_width="150dp"
+            android:layout_height="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:layout_marginBottom="-45dp"
+            android:gravity="center"
+            android:text="DELETE CLASS NAME"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:background="@drawable/darkborder2"
+            android:fontFamily="sans-serif" />
+
+        <ImageView
+            android:id="@+id/button_closepopforstudent_ST"
+            android:background="@drawable/net_cancel"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="100dp" />
+    </RelativeLayout>
+</RelativeLayout>

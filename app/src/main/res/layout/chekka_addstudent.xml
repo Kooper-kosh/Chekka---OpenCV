@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    // CREATE EXAM NAME
+    <include layout="@layout/headerblankforchekka"
+        android:id="@+id/header_student"
+        android:visibility="invisible">
+    </include>
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/backpo"
+        android:id="@+id/back_choose"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_chooseaddstudent"
+        android:visibility="visible">
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:layout_marginLeft="70dp"
+            android:textSize="10sp"
+            android:text="Use this example format to import excel file. Otherwise,you can't add students using excel."
+            />
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="415dp"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/exampleexcilefile">
+
+        </ImageView>
+    <RelativeLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/addstudentmanualbtn"
+        android:id="@+id/addstudentmanually"
+        android:fadingEdge="vertical">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="250dp"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/addstudentimportbtn"
+        android:id="@+id/addstudentexcel"
+        >
+
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+    //ADD STUDENT
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/rectangleshadow"
+        android:id="@+id/layout_addstudent_ST"
+        android:visibility="invisible">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:background="@drawable/studrec">
+        <RelativeLayout
+            android:id="@+id/cross"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/ekis"
+            >
+
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            >
+            <EditText
+
+                android:id="@+id/EditTextAddStudent_ST"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:hint="Student Name"
+                android:textAlignment="center"
+                android:textColor="@color/color_2nddarker"
+                android:textColorHint="@color/color_2nddarker"
+                android:background="@drawable/grayborder"
+                 />
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp">
+            <EditText
+                android:id="@+id/EditTextAddStudentNumber_ST"
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:hint="Student Number"
+                android:textColor="@color/color_2nddarker"
+                android:textColorHint="@color/color_2nddarker"
+                android:textAlignment="center"
+                android:background="@drawable/grayborder"
+                android:gravity="center_horizontal" />
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp">
+            <EditText
+                android:id="@+id/EditTextAddStudentEmail_ST"
+                android:inputType="textEmailAddress"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:hint="Student Email"
+                android:textColor="@color/color_2nddarker"
+                android:textColorHint="@color/color_2nddarker"
+                android:textAlignment="center"
+                android:background="@drawable/grayborder"
+                android:gravity="center_horizontal" />
+
+        </FrameLayout>
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Select Classname"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="50dp"/>
+        <Spinner
+            android:id="@+id/spinneraddstudent"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/groupexamspinner">
+        </Spinner>
+        <TextView
+            android:id="@+id/ButtonOK_ST"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/studsavesave"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/ButtonCancel_ST"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="352dp"
+            android:background="@drawable/studcleaclear"
+            android:layout_marginLeft="150dp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_student"
+        android:id="@+id/relLayout"
+        android:visibility="invisible"
+        >
+
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnUpDirectory"
+            android:visibility="invisible"
+            android:text="Back"/>
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Class name"
+            android:textColor="@color/color_2nddarker"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+         />
+        <Spinner
+            android:id="@+id/spinner_excelstudent"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="150dp">
+        </Spinner>
+    </RelativeLayout>
+
+    <ListView
+        android:visibility="invisible"
+        android:layout_below="@+id/relLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvInternalStorage"></ListView>
+
+</RelativeLayout>

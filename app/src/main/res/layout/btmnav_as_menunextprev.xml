@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+
+    <item
+        android:id="@+id/discard_exam"
+        android:title="Discard"
+        android:icon="@drawable/discardpaper" />
+
+
+    <item
+        android:id="@+id/customize"
+        android:title="Customize"
+        android:icon="@drawable/customizepaper" />
+
+</menu>

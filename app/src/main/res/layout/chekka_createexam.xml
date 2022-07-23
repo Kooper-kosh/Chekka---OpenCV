@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    // CREATE EXAM NAME
+    <RelativeLayout
+        android:id="@+id/layout_createexam_AC"
+        android:layout_width="412dp"
+        android:layout_height="300dp"
+        android:visibility="visible"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:text="CREATE EXAM SHEET"
+            android:backgroundTint="@color/white"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="90dp"
+            android:textColor="@color/color_2nddarker"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a class:"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerexam"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="80dp"
+            android:autofillHints="Select a Class"
+            android:background="@drawable/groupexamspinner"
+            />
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/llexamset"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your exam sets:"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_examset"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/set1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="1"
+                    android:textColor="#F0FFF0"
+                    android:textSize="20sp"
+                    android:checked="true"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/set2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="2"
+                    android:textColor="#F0FFF0"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        // RADIO
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llexamset"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please, select an exam section below"
+                android:textColor="#000"
+                android:textSize="20sp"
+
+                 />
+
+            <RadioGroup
+                android:id="@+id/rg_exam"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:buttonTint="@color/color_2nddarker"
+                >
+
+                <RadioButton
+
+                    android:id="@+id/sec1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="1"
+                    android:checked="false"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+
+
+                    android:id="@+id/sec2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="2"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+
+                    android:id="@+id/sec3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="3"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+
+                    android:id="@+id/sec4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="4"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+
+    // PROCEED SET 2
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="700dp"
+        android:background="@color/white"
+        android:id="@+id/layout_proceedset2"
+        android:visibility="invisible">
+
+
+        <TextView
+            android:id="@+id/button_proceedset2_P2"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/forgett"
+            android:text="EXAM SET 1 SAVED! Please, proceed to set 2. Click me! "
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/lightblue"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="270dp"
+        android:background="@color/white"
+        android:id="@+id/layout_welcomescreen_test"
+        android:visibility="visible">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="80dp"
+            android:background="@color/white"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            />
+        <TextView
+            android:id="@+id/text_details"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textColor="@color/lightblue"
+            android:textSize="20sp"
+            android:visibility="visible"/>
+        <TextView
+            android:layout_below="@id/button_layout"
+            android:id="@+id/txt_swipe"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="swipe left and right"
+            android:textColor="@color/lightblue"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:visibility="invisible"/>
+        <RelativeLayout
+            android:id="@+id/button_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:background="@color/transparent_bg"
+            android:visibility="visible">
+            <LinearLayout
+                android:id="@+id/circles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_above="@+id/txt_swipe"
+            android:visibility="invisible"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/customize_btn"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/customize_btn">
+        </RelativeLayout>
+    </RelativeLayout>
+
+    //SCROLL
+    <ScrollView
+        android:id="@+id/scrollview_for_examsheet"
+        android:layout_width="500dp"
+        android:layout_height="800dp"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/examname_sec"
+                android:text=""
+                android:backgroundTint="@color/white"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:textColor="@color/color_2nddarker"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/next_btn"
+                android:layout_alignParentTop="true"
+               />
+            <RelativeLayout
+                android:id="@+id/layout_for_section1_EX"
+                android:background="@drawable/rec6"
+                android:layout_width="280dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="35dp">
+
+                <TextView
+                    android:text="SECTION 1"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/itemscount_sec1"
+                    android:text=""
+                    android:backgroundTint="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="200dp"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:text="MARKS FOR CORRECT"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="20dp"
+
+                    />
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="25dp">
+
+                    <Spinner
+                        android:id="@+id/mc_spinner_for_section1_EX"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="20dp"
+                        android:layout_marginLeft="52sp"
+                        android:layout_marginTop="50dp"
+                        android:background = "@drawable/groupexamspinner"
+                        android:entries="@array/spinner_section1_entries_marks"/>
+
+                </FrameLayout>
+                <TextView
+                    android:text="MARKS FOR INCORRECT"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="80dp"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="58dp">
+
+                    <Spinner
+                        android:id="@+id/mi_spinner_for_section1_EX"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:background = "@drawable/groupexamspinner"
+                        android:layout_margin="20dp"
+                        android:layout_marginLeft="52sp"
+                        android:layout_marginTop="90dp"
+
+                        android:entries="@array/spinner_section2_entries_marks"/>
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_for_section2_EX"
+                android:background="@drawable/rec6"
+                android:layout_width="280dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="35dp"
+            >
+
+                <TextView
+                    android:text="SECTION 2"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/itemscount_sec2"
+                    android:text=""
+                    android:backgroundTint="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="200dp"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:text="MARKS FOR CORRECT"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="25dp">
+
+                    <Spinner
+                        android:id="@+id/mc_spinner_for_section2_EX"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:background = "@drawable/groupexamspinner"
+                        android:layout_margin="20dp"
+                        android:layout_marginLeft="52sp"
+                        android:layout_marginTop="90dp"
+                        android:entries="@array/spinner_section1_entries_marks"
+                        />
+
+                </FrameLayout>
+                <TextView
+                    android:text="MARKS FOR INCORRECT"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="80dp"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="58dp">
+
+                    <Spinner
+                        android:id="@+id/mi_spinner_for_section2_EX"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:background = "@drawable/groupexamspinner"
+                        android:layout_margin="20dp"
+                        android:layout_marginLeft="52sp"
+                        android:layout_marginTop="90dp"
+                        android:entries="@array/spinner_section2_entries_marks"
+                        />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            //SECTION 3
+            <RelativeLayout
+                android:id="@+id/layout_for_section3_EX"
+                android:background="@drawable/rec6"
+                android:layout_width="280dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="35dp"
+               >
+
+                <TextView
+                    android:text="SECTION 3"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/itemscount_sec3"
+                    android:text=""
+                    android:backgroundTint="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="200dp"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:text="MARKS FOR CORRECT"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="25dp">
+
+                    <Spinner
+                        android:id="@+id/mc_spinner_for_section3_EX"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:background = "@drawable/groupexamspinner"
+                        android:layout_margin="20dp"
+                        android:layout_marginLeft="52sp"
+                        android:layout_marginTop="90dp"
+                        android:entries="@array/spinner_section1_entries_marks"
+                        />
+
+                </FrameLayout>
+                <TextView
+                    android:text="MARKS FOR INCORRECT"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="80dp"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="58dp">
+                    <Spinner
+                        android:id="@+id/mi_spinner_for_section3_EX"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:background = "@drawable/groupexamspinner"
+                        android:layout_margin="20dp"
+                        android:layout_marginLeft="52sp"
+                        android:layout_marginTop="90dp"
+                        android:entries="@array/spinner_section2_entries_marks"
+                        />
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+            //SECTION 4
+            <RelativeLayout
+                android:id="@+id/layout_for_section4_EX"
+                android:background="@drawable/rec6"
+                android:layout_width="280dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="35dp"
+               >
+
+                <TextView
+                    android:text="SECTION 4"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/itemscount_sec4"
+                    android:text=""
+                    android:backgroundTint="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="200dp"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:text="MARKS FOR CORRECT"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="25dp">
+
+                    <Spinner
+                        android:id="@+id/mc_spinner_for_section4_EX"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:background = "@drawable/groupexamspinner"
+                        android:layout_margin="20dp"
+                        android:layout_marginLeft="52sp"
+                        android:layout_marginTop="90dp"
+                        android:entries="@array/spinner_section1_entries_marks"
+                        />
+
+                </FrameLayout>
+                <TextView
+                    android:text="MARKS FOR INCORRECT"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="80dp"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="58dp">
+
+                    <Spinner
+                        android:id="@+id/mi_spinner_for_section4_EX"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:background = "@drawable/groupexamspinner"
+                        android:layout_margin="20dp"
+                        android:layout_marginLeft="52sp"
+                        android:layout_marginTop="90dp"
+                        android:entries="@array/spinner_section2_entries_marks"
+                        />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView
+        android:text="cxdfd"
+        android:id="@+id/examnamesection"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/color_2nddarker"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        />
+    //SHEET
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/sheet_layout"
+    android:visibility="invisible">
+    <TextView
+        android:text=""
+        android:id="@+id/examsheet_section"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/color_2nddarker"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        />
+        <ImageView
+            android:id="@+id/sheetfor1"
+            android:layout_width="300dp"
+            android:layout_height="500dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+    <ImageView
+        android:id="@+id/savebutton"
+        android:visibility="visible"
+        android:layout_width="150dp"
+        android:layout_height="54dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/save_btn123"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        />
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/popexamname"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible"
+        android:background="@drawable/rectangleshadow"
+        >
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rec5"
+            >
+            <ImageView
+                android:id="@+id/ekisexamname"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="200dp"
+                android:background="@drawable/ekis"
+                android:layout_marginTop="10dp">
+
+            </ImageView>
+            <EditText
+                android:id="@+id/editexamname"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/grayborder"
+                android:hint="Enter Exam Name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp">
+            </EditText>
+            <ImageView
+                android:id="@+id/saveexamname"
+                android:layout_width="150dp"
+                android:layout_height="54dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/save_btn"
+                android:layout_marginTop="120dp">
+            </ImageView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/nextbutton"
+        android:visibility="invisible"
+        android:layout_width="150dp"
+        android:layout_height="54dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/next_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+     >
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/popforsaveimage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible"
+        android:background="@drawable/rectangleshadow">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rec8"
+            >
+            <RelativeLayout
+                android:id="@+id/button_scan_as_image"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:gravity="center">
+                <RelativeLayout
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/image_icon">
+
+                </RelativeLayout>
+                <TextView
+
+                    android:layout_width="150dp"
+                    android:layout_height="47dp"
+                    android:gravity="center"
+                    android:text="Save as image"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="60dp"
+                    android:fontFamily="sans-serif"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/button_scan_as_pdf"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="40dp"
+                android:gravity="center">
+                <RelativeLayout
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/pdf_icon">
+                </RelativeLayout>
+                <TextView
+                    android:visibility="visible"
+                    android:textStyle="bold"
+                    android:layout_width="250dp"
+                    android:layout_height="47dp"
+                    android:gravity="center"
+                    android:text="Save as pdf"
+                    android:textColor="@color/color_2nddarker"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="60dp"
+                    android:fontFamily="sans-serif"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include
+        layout="@layout/chekka_footer"
+        android:visibility="invisible"
+        android:id="@+id/layout_discard_customize"/>
+</RelativeLayout>

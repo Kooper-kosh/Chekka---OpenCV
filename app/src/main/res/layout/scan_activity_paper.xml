@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.chekka.capstone.ScanImageAnswerSheet">
+    <FrameLayout
+        android:id="@+id/scanned_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:visibility="visible"/>
+        <ImageView
+            android:id="@+id/scanned_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:visibility="visible"/>
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:text=""
+            android:layout_marginTop="185dp"
+            android:id="@+id/txt_name_scanned"
+            android:textColor="@color/colorBlackFortyPercentAlpha"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="200dp"
+            android:text=""
+            android:id="@+id/txt_score_scanned"
+            android:textColor="@color/colorBlackFortyPercentAlpha"
+            android:textSize="10sp"
+            />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="215dp"
+            android:textColor="@color/colorBlackFortyPercentAlpha"
+            android:text=""
+            android:id="@+id/txt_average_scanned"
+            android:textSize="10sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/crop_accept_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:alpha="0.8"
+                app:srcCompat="@drawable/accept" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6" />
+
+            <ImageView
+                android:id="@+id/crop_reject_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:alpha="0.8"
+                app:srcCompat="@drawable/reject" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

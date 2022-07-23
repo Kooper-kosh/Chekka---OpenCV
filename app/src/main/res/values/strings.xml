@@ -1,0 +1,62 @@
+<resources>
+    <string name= "Chekka" translatable="false"> Chekka Scan</string>
+        <string name="EnterPassword" translatable="false">Password</string>
+        <string name="EnterEmail" translatable="false">Email</string>
+        <string name="EnterName" translatable="false">Username</string>
+        <string name="EnterCode" translatable="false">Code for confirmation</string>
+                <string name="EnterEmail_E" translatable="false">Enter your email</string>
+            <string name="Taphere" translatable="false"><u>Tap here</u></string>
+            <string name="Registerhere" translatable="false"><u>Register here</u></string>
+    <string name="login" translatable="false"><u>log in</u></string>
+        <string name="NotesForgot" translatable="false">To help you to recover your account.
+        Kindly send us the confirmation code that is being sent
+        to your registered email. Thank you!</string>
+        <string name="NotesRegister" translatable="false">Please, input a code that is being sent to your email and send it to us. Thank you!</string>
+        <string name="NotesEmail" translatable="false">Please, enter your registered email and we will send you a verification code. Thank you!</string>
+    <string name="Noteswelcome" translatable="false">Welcome to Chekka, Teacher! to start, please create your first class by clicking + button then choose Add a Class. </string>
+    <string name="NotesClass" translatable="false">Your created class located at Dashboard -> Class. To add students please click + button then choose Add a Student </string>
+
+    <string-array name="Spinner_items">
+            <item>"No Class"</item>
+        </string-array>
+        <string-array name="Spinner_createexam">
+            <item>"Everyone"</item>
+        </string-array>
+        <string-array name="spinner_section1_entries_nq">
+
+            <item>"10"</item>
+            <item>"5"</item>
+        </string-array>
+        <string-array name="spinner_section1_entries_qt">
+            <item>"multiple choice"</item>
+            <item>"true or false"</item>
+        </string-array>
+        <string-array name="spinner_section1_entries_marks">
+            <item>""</item>
+            <item>"1"</item>
+            <item>"2"</item>
+            <item>"3"</item>
+            <item>"4"</item>
+            <item>"5"</item>
+            <item>"6"</item>
+            <item>"7"</item>
+            <item>"8"</item>
+            <item>"9"</item>
+            <item>"10"</item>
+        </string-array>
+    <string-array name="spinner_section2_entries_marks">
+        <item>""</item>
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8"</item>
+        <item>"9"</item>
+        <item>"10"</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="150dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:padding="15dp"
+    tools:context=".Chekka"
+    >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rectangle10">
+
+        <ImageView
+            android:id="@+id/item_class_name_icon_CL"
+            android:background="@drawable/classiconnie2"
+            android:layout_width="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="40dp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/item_class_name_CL"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/color_2nddarker"
+            android:textSize="25dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="150dp"
+            android:textStyle="bold"
+            android:text="7-Orchid"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/item_class_name_date_CL"
+            android:textColor="@color/color_2nddarker"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="150dp"
+            android:textSize="15dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/item_noofstudents_icon_CL"
+            android:background="@drawable/ic_studperson"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="100dp"
+            android:visibility="invisible"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="150dp"
+            android:layout_weight="1"
+            android:text="Number of Students:"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/item_noofstudents_CL"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="150dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:textSize="15dp"/>
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/item_editlistview_class_CL"
+            android:background="@drawable/ic_edit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="290dp" />
+    </FrameLayout>
+</LinearLayout>
